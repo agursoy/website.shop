@@ -67,17 +67,16 @@
               <!-- prettier-ignore -->
               <div
                   v-if="categoryNote"
-                  class="block whitespace-pre-line mt-6 bg-gray-200 p-4 rounded-md inline-block"
+                  class="block whitespace-pre-line mt-6 mb-6 bg-gray-200 p-4 rounded-md inline-block"
                 >{{ categoryNote }}
                 </div>
               <div v-if="get(product, 'ask_expert')">
-                <button
+                <a
                   v-if="product.status === 'published'"
                   class="mt-4 bg-white border border-gray-200 d hover:shadow-lg text-gray-700 font-semibold py-2 px-4 rounded shadow"
-                  @click="askExpert(product)"
-                >
-                  Satıcıya Sor
-                </button>
+                  href="https://api.whatsapp.com/send?phone=+905457824310"
+                  >Satıcıya Sor (Whatsapp)
+                </a>
               </div>
               <div v-else-if="get(product, 'finished_stock')">
                 <div class="mt-4 text-lg leading-relaxed text-gray-600">

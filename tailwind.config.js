@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        unna: ["unna", "sans-serif"],
+        unna: ["Glegoo", "serif"],
       },
       height: (theme) => ({
         "screen/2": "50vh",
